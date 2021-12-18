@@ -22,7 +22,7 @@ module.exports = (request) => {
 
   const verifyPayment = (ref, mycallback) => {
     const options = {
-      uri: `https://api.paystack.co/transaction/verify/:${ref}`,
+      uri: `https://api.paystack.co/transaction/verify/${ref}`,
       method: "GET",
       headers: {
         Authorization: `Bearer ${secret_key}`,

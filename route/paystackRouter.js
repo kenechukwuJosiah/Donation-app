@@ -1,9 +1,9 @@
 const express = require('express');
-const {makePayment, verifyPayment, checkpaystack} = require('../controllers/paystackController')
+const {makePayment, verifyPayment} = require('../controllers/paystackController')
 
 const route = express.Router();
 
 route.post('/donate',makePayment );
-route.post('/paystack/callback', verifyPayment);
+route.post('/paystack/verify-payment', verifyPayment);
 
 module.exports = route;
