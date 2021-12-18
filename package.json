@@ -1,0 +1,20 @@
+{
+  "name": "online_payment",
+  "version": "1.0.0",
+  "description": "This an online donation platform. Integrated with paystack payment gateway. Just for testing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.2",
+    "request": "^2.88.2"
+  }
+}
